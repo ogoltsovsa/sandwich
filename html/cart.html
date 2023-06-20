@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Метро</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="..\pic\logo.svg" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- Шапка -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" src="../pic/logo.svg" alt="M">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Переключатель навигации">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Меню</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Город
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Москва</a></li>
+                <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+                <li><a class="dropdown-item" href="#">Самара</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-cart" href="cart.html">
+                <img id="nav-cart-icon" src="..\pic\basket.svg" alt="">
+                660₽
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <div class="container-xxl">
+
+<!-- Модальное окно -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="staticBackdropLabel">Оформление заказа</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Имя" aria-label="Имя пользователя" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Адрес" aria-label="Имя пользователя" aria-describedby="basic-addon1">
+              </div>
+              <p>Сумма к оплате: 660₽ </p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Наличными
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Картой
+                </label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                Оплатить
+              </button>
+              <button type="button" class="btn btn-1" data-bs-dismiss="modal">Отмена</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Модальное окно -->
+      <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="staticBackdropLabel">Заказ оплачен</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-1" data-bs-dismiss="modal">Ок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="card mb-3" style="max-width: 1280px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="..\pic\p7.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Сэндвич Лосось</h5>
+              <p class="card-text">Хлеб ржаной</p>
+              <p class="card-text"><small class="text-muted">380 г</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="..\pic\p6.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Сэндвич Грибной</h5>
+              <p class="card-text">Хлеб зерновой</p>
+              <p class="card-text"><small class="text-muted">360 г</small></p>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Оформить заказ
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col text-center">
+          <a href="#"><img class="icons" src="..\pic\youtube.svg" alt=""></a>
+          <a href="#"><img class="icons" src="..\pic\facebook.svg" alt=""></a>
+          <a href="#"><img class="icons" src="..\pic\instagram.svg" alt=""></a>
+          <a href="#"><img class="icons" src="..\pic\telegram.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
