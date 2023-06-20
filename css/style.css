@@ -1,0 +1,96 @@
+:root{
+  --color-red: #B4211C;
+  --color-black: #181818;
+  font-size: 20px;
+  font-family: "Montserrat", "Arial" sans-serif;
+  font-weight: 400;
+}
+.container-xxl{
+  padding: 0 2rem;
+}
+h1{
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-black);
+  font-family: "Montserrat";
+}
+h2{
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-black);
+  font-family: "Montserrat";
+}
+p{
+  font-family: "Montserrat", "Arial" sans-serif;
+}
+/* header */
+.nav-link{
+  font-size: 1.8rem;
+  color: var(--color-black);
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+.navbar{
+  padding: 2rem 0;
+}
+.navbar-menu{
+  text-decoration: overline;
+}
+#logo{
+  width: 6rem;
+}
+.nav-cart{
+  background-color: var(--color-red);
+  color: #FFF;
+}
+#nav-cart-icon{
+  width: 1.8rem;
+}
+.nav-item{
+  margin-left: 1rem;
+}
+.dropdown-menu{
+  border-radius: 0;
+  border-color: var(--color-black);
+}
+
+/* footer */
+footer{
+  padding: 3rem 0;
+}
+.icons{
+  width: 2rem;
+  margin: 0.5rem;
+}
+
+.slider{
+  margin-bottom: 2rem;
+}
+
+/* menu.html */
+.card{
+  border-color: #FFF;
+}
+.btn-1{
+  background-color: var(--color-red);
+  border-radius: 0;
+  color: #FFF;
+}
+.btn-2{
+  background-color: var(--color-black);
+  color: #FFF;
+  border-radius: 0;
+}
+input[type="radio"]:checked {
+  background-color: var(--color-red);
+  border-color: var(--color-red);
+}
+.modal-content{
+  border-color: #FFF;
+}
+.card-img-top{
+  padding-top: 20%;
+}
+.modal-content{
+  border-radius: 0;
+}
